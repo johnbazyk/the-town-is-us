@@ -96,7 +96,7 @@ const SOURCES = {
   },
   PA_23_167: {
     name: "Connecticut Public Act 23-167",
-    url: "https://www.cga.ct.gov/2023/act/pa/pdf/2023PA-00167-R00SB-01028-PA.pdf",
+    url: "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Public+Act&which_year=2023&bill_num=167",
     description: "School climate legislation mandating new framework effective 2025-26",
   },
   PUBLIC_SCHOOL_REVIEW: {
