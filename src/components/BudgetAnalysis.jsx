@@ -236,6 +236,24 @@ function BudgetAnalysis() {
         </p>
       </div>
 
+      {/* Enhancement 3 — Inflation-Adjusted Spending Context */}
+      <div className="bg-granby-gold-light border-l-4 border-granby-gold px-5 py-4 rounded-r mb-8">
+        <p className="text-xs font-bold uppercase tracking-widest text-granby-maroon mb-2">Adjusting for Inflation</p>
+        <p className="text-granby-maroon leading-relaxed text-sm">
+          The Granby school budget grew from approximately $28.4M (FY2016) to $40.9M (FY2027), a 44%
+          nominal increase. Over the same period, cumulative Northeast CPI inflation was approximately
+          30–32% (Bureau of Labor Statistics, Northeast Region
+          <SourceCitation id="BLS_NORTHEAST" index={5} />). That means roughly 70–75% of the budget
+          increase can be attributed to inflation, while the remaining 25–30% represents real spending
+          growth — even as enrollment fell ~20%. In real (inflation-adjusted) terms, per-student
+          spending has still increased significantly.
+        </p>
+        <p className="text-xs text-gray-500 mt-2">
+          <span className="estimate-marker">*</span> Inflation figures are approximate estimates based
+          on Northeast CPI, not a precise district-level calculation.
+        </p>
+      </div>
+
       {/* ── Per-Pupil Chart ──────────────────────────────────────── */}
       <div className="mb-10">
         <h3 className="font-heading text-lg font-bold text-granby-maroon mb-1">
@@ -265,6 +283,26 @@ function BudgetAnalysis() {
           enrolled, those fixed costs get divided among fewer families, so the cost per student
           rises. Economists call this the "ratchet effect" because spending ratchets up easily
           but rarely comes back down.
+        </p>
+      </div>
+
+      {/* Enhancement 4 — Special Education Cost Context */}
+      <div className="bg-granby-gold-light border-l-4 border-granby-gold px-5 py-4 rounded-r mb-8">
+        <p className="text-xs font-bold uppercase tracking-widest text-granby-maroon mb-2">Special Education and Budget Growth</p>
+        <p className="text-granby-maroon leading-relaxed text-sm mb-2">
+          Special education costs are a significant driver of per-student spending increases in
+          Connecticut and nationally. According to the FY2027 Superintendent's Proposed Budget,
+          special education accounts for 1.32% of the overall FY2027 budget increase. The district
+          has focused on educating students within Granby Public Schools whenever appropriate,
+          reducing costly out-of-district tuition and transportation. The Granby Alternative Program
+          (GAP) and B.E.A.R. Transition Academy serve students who might otherwise require
+          out-of-district placement.
+          <SourceCitation id="FY27_BOE_BUDGET" index={4} />
+        </p>
+        <p className="text-granby-maroon leading-relaxed text-sm">
+          NCEP includes special education expenditures in the per-student calculation, which means
+          districts with higher special education needs may show higher per-student costs regardless
+          of general education spending decisions.
         </p>
       </div>
 

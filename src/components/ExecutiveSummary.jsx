@@ -159,6 +159,36 @@ function ExecutiveSummary() {
         </p>
       </div>
 
+      {/* Enhancement 5 — DRG C Peer Comparison Note */}
+      <div className="bg-granby-gold-light border-l-4 border-granby-gold px-5 py-4 rounded-r mb-8">
+        <p className="text-xs font-bold uppercase tracking-widest text-granby-maroon mb-2">Why Simsbury?</p>
+        <p className="text-granby-maroon leading-relaxed text-sm">
+          This dashboard compares Granby to Simsbury because the two districts have nearly identical
+          per-student spending ($21,748 vs. $21,751) but very different academic outcomes. Granby is
+          classified as <strong>DRG C</strong> by the Connecticut State Department of Education, which
+          groups districts by income, education levels, occupation, family structure, poverty level,
+          home language, and enrollment size. The DRG C average per-student spending is $23,708 —
+          meaning Granby actually spends <em>below</em> its peer group average. A broader DRG C
+          comparison is available on page 6 of the FY2027 budget book.
+          <SourceCitation id="FY27_BOE_BUDGET" index={10} />
+        </p>
+      </div>
+
+      {/* Enhancement 1 — NCEP Methodology Note */}
+      <div className="bg-granby-gold-light border-l-4 border-granby-gold px-5 py-4 rounded-r mb-8">
+        <p className="text-xs font-bold uppercase tracking-widest text-granby-maroon mb-2">What "Cost Per Student" Measures</p>
+        <p className="text-granby-maroon leading-relaxed text-sm">
+          The per-student figures on this dashboard use Connecticut's Net Current Expenditures per Pupil
+          (NCEP), published by the CT Bureau of Fiscal Services. NCEP includes all current operating
+          expenditures from all funding sources — salaries, benefits, special education, supplies,
+          transportation (non-reimbursable), and purchased services. It excludes capital expenditures
+          (land, buildings, equipment) and debt service. This is the same metric the state uses to
+          calculate Special Education Excess Cost Grant contributions. Source: CT General Statutes
+          Section 10-261(a)(3).
+          <SourceCitation id="NCEP_2026" index={9} />
+        </p>
+      </div>
+
       {/* Bottom callout */}
       <div className="bg-granby-maroon text-white rounded p-5 text-sm">
         <p className="font-heading font-bold text-base mb-1">About This Dashboard</p>

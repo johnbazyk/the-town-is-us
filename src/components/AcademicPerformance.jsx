@@ -258,6 +258,48 @@ function AcademicPerformance() {
         </div>
       </div>
 
+      {/* Enhancement 2 — Graduation Rate & Strengths */}
+      <div className="mb-10">
+        <h3 className="font-heading text-lg font-bold text-granby-maroon mb-1">
+          Where Granby Is Strong
+          <SourceCitation id="CT_EDSIGHT_GRAD" index={5} />
+        </h3>
+        <p className="text-sm text-muted mb-4">
+          Graduation rates and AP performance represent genuine strengths. The concerns on this
+          dashboard focus specifically on the gap between spending growth and math proficiency trends.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          <div className="bg-warm border-l-4 border-granby-maroon px-4 py-4 rounded-r text-center">
+            <p className="text-xs font-bold uppercase tracking-widest text-muted mb-1">Granby Grad Rate</p>
+            <p className="font-heading text-3xl sm:text-4xl font-black text-granby-maroon">95%</p>
+            <p className="text-xs text-gray-500 mt-1">4-year rate, 2023–24</p>
+          </div>
+          <div className="bg-warm border-l-4 border-granby-gold px-4 py-4 rounded-r text-center">
+            <p className="text-xs font-bold uppercase tracking-widest text-muted mb-1">Simsbury Grad Rate</p>
+            <p className="font-heading text-3xl sm:text-4xl font-black text-granby-maroon">~95%</p>
+            <p className="text-xs text-gray-500 mt-1">4-year rate, 2023–24</p>
+          </div>
+          <div className="bg-warm border-l-4 border-gray-300 px-4 py-4 rounded-r text-center">
+            <p className="text-xs font-bold uppercase tracking-widest text-muted mb-1">CT State Average</p>
+            <p className="font-heading text-3xl sm:text-4xl font-black text-muted">89%</p>
+            <p className="text-xs text-gray-500 mt-1">4-year rate, 2023–24</p>
+          </div>
+        </div>
+        <div className="bg-granby-gold-light border-l-4 border-granby-gold px-5 py-4 rounded-r">
+          <p className="text-xs font-bold uppercase tracking-widest text-granby-maroon mb-2">FY2027 Notable Achievements (from BOE Budget Book)</p>
+          <ul className="text-sm text-granby-maroon space-y-1 leading-relaxed list-disc list-inside">
+            <li>93% of GMHS AP testers scored 3 or above — highest ever recorded</li>
+            <li>80% of juniors met SAT benchmark in Evidence-Based Reading &amp; Writing (8% increase from junior PSAT)</li>
+            <li>Over 90% of the graduating class took at least one of 32 college credit courses</li>
+            <li>26 graduates earned the Seal of Biliteracy in 2025</li>
+          </ul>
+          <p className="text-xs text-gray-500 mt-3">
+            Source: FY2027 Superintendent's Proposed Budget Book.
+            <SourceCitation id="FY27_BOE_BUDGET" index={6} />
+          </p>
+        </div>
+      </div>
+
       {/* ── SAT Benchmarks Chart ────────────────────────────────── */}
       <div className="mb-10">
         <h3 className="font-heading text-lg font-bold text-granby-maroon mb-1">

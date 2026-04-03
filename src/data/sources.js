@@ -104,6 +104,16 @@ const SOURCES = {
     url: "https://www.publicschoolreview.com/connecticut/granby-school-district/901680-school-district",
     description: "Historical district ranking data showing #4 in 2013",
   },
+  CT_EDSIGHT_GRAD: {
+    name: "CT EdSight — Four-Year Graduation Rates",
+    url: "https://public-edsight.ct.gov/performance/four-year-graduation-rates",
+    description: "Connecticut four-year graduation rates by district, 2023-24",
+  },
+  BLS_NORTHEAST: {
+    name: "Bureau of Labor Statistics — Northeast Region",
+    url: "https://www.bls.gov/regions/northeast/connecticut.htm",
+    description: "Consumer Price Index data for the Northeast region, used for inflation context",
+  },
 
   // === Budget Book Sources ===
   // BOE budget books are hosted on granbyschools.org via a JS-rendered CMS (Thrillshare).
