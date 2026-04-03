@@ -1,5 +1,6 @@
 import React, { useState, lazy, Suspense } from 'react';
 import Layout from './components/Layout';
+import ChatWidget from './components/ChatWidget';
 
 // Lazy-load tab content for performance
 const ExecutiveSummary = lazy(() => import('./components/ExecutiveSummary'));
@@ -28,15 +29,18 @@ function App() {
   const ActiveComponent = TABS.find(t => t.id === activeTab)?.component;
 
   return (
-    <Layout tabs={TABS} activeTab={activeTab} onTabChange={setActiveTab}>
-      <Suspense fallback={
-        <div className="flex items-center justify-center py-20">
-          <p className="text-muted text-lg">Loading...</p>
-        </div>
-      }>
-        {ActiveComponent && <ActiveComponent />}
-      </Suspense>
-    </Layout>
+    <>
+      <Layout tabs={TABS} activeTab={activeTab} onTabChange={setActiveTab}>
+        <Suspense fallback={
+          <div className="flex items-center justify-center py-20">
+            <p className="text-muted text-lg">Loading...</p>
+          </div>
+        }>
+          {ActiveComponent && <ActiveComponent />}
+        </Suspense>
+      </Layout>
+      <ChatWidget />
+    </>
   );
 }
 
