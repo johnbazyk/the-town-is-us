@@ -6,3 +6,15 @@ build/
 .DS_Store
 .env
 .env.local
+
+# Internal working documents — not part of the public repo
+CLAUDE.md
+DEPLOY-PROMPT.md
+VISUAL-QA-CHECKLIST.md
+FULL-UPDATE-PROMPT.md
+ENHANCEMENT-PROMPT.md
+QA-AUDIT-RESULTS.md
+OVERHAUL-PROMPT.md
+PRE-DEPLOY-FIX-PROMPT.md
+FACT-CHECK-PROMPT.md
+FACT-CHECK-REPORT.md

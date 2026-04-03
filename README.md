@@ -1,5 +1,7 @@
 # The Town Is Us — Granby Budget Accountability Dashboard
 
+**Live site:** https://clever-faloodeh-1359e6.netlify.app
+
 A public accountability dashboard for Granby, CT school budget and academic outcomes. Every number is sourced from official public records. Residents can fact-check everything.
 
 ## What
