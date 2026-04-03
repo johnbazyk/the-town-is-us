@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Granby Accountability Dashboard — Sourced, fact-checked data about Granby CT's school budget, academic performance, property taxes, and school climate." />
+    <title>Granby Accountability Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-white text-navy font-body">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Hidden form for Netlify deploy-time detection (REQUIRED for SPA) -->
+    <!-- Netlify scans static HTML at build time to discover forms. -->
+    <!-- The actual UI is rendered by React in SubmitData.jsx -->
+    <form name="citizen-data" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <select name="category"><option value=""></option></select>
+      <textarea name="data"></textarea>
+      <input type="url" name="source-url" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Accessibility: 18px base so all rem sizes scale up proportionally */
+html { font-size: 18px; }
+
+/* Editorial typography baseline */
+body {
+  font-family: 'Source Sans Pro', system-ui, sans-serif;
+  color: #2d2d2d;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', Georgia, serif;
+}
+
+/* Utility for estimated data markers */
+.estimate-marker {
+  color: #c0392b;
+  font-weight: 700;
+  cursor: help;
+}
+
+/* Source citation link */
+.source-cite {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #8C1D40;
+  background: #f9f4eb;
+  border-radius: 2px;
+  padding: 0 4px;
+  min-height: 20px;
+  margin-left: 2px;
+  cursor: pointer;
+  vertical-align: super;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.source-cite:hover {
+  background: #8C1D40;
+  color: #ffffff;
+}
+
+/* Fact-check columns */
+.claim-box {
+  background: #fdecea;
+  border-left: 4px solid #c0392b;
+  padding: 1rem 1.25rem;
+}
+.data-box {
+  background: #e8f5e9;
+  border-left: 4px solid #2e7d32;
+  padding: 1rem 1.25rem;
+}

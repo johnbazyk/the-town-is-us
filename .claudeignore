@@ -1,0 +1,60 @@
+# ===========================================
+# Granby Dashboard — .claudeignore
+# ===========================================
+# This file tells Claude Code what to SKIP when indexing the project.
+# The parent folder has ~1,100 PDFs that would flood context.
+# We reference them in CLAUDE.md but don't need them indexed.
+
+# --- Source PDF folders (read-only reference, not part of the React app) ---
+../01-Budget/
+../02-Tax-Bills/
+../03-BOE-Minutes/
+../04-COA-Minutes/
+../05-BOF-Minutes/
+../06-Analysis/
+../07-Other/
+../08-BOE-Meeting-Minutes/
+../09-BOE-Meeting-Packets/
+../10-BOE-Agendas/
+../11-BOE-Budget-Books/
+../12-BOE-Budget-Presentations/
+../13-BOE-Budget-Workshops/
+../14-Finance-Subcommittee/
+../15-Curriculum-Subcommittee/
+../16-School-Profiles/
+../17-School-Climate/
+../18-SRO-Safety/
+../19-Strategic-Plans/
+../20-Enrollment-Projections/
+../21-Plus-One-Budget/
+../22-Newsletters-Vision/
+../23-Policies/
+../24-HR-Benefits/
+../25-Health-Forms/
+../26-Special-Ed-Transition/
+../27-Facilities-Capital/
+../28-Reopening-COVID/
+../29-Miscellaneous/
+../granby-pdfs/
+
+# --- MD files from OTHER tool sessions (not source data) ---
+../GRANBY-COWORK-INSTRUCTIONS.md
+../GRANBY-COWORK-SKILL.md
+
+# --- Previous dashboard builds (not part of this project) ---
+../Granby-Budget-Accountability-Dashboard.html
+../Granby-Budget-Accountability-Dashboard.jsx
+
+# --- Spreadsheet from previous analysis ---
+../Granby-Budget-Deep-Dive-FY20-FY27.xlsx
+
+# --- macOS clutter ---
+../.DS_Store
+.DS_Store
+
+# --- Node/build artifacts ---
+node_modules/
+dist/
+build/
+.cache/
+*.log
