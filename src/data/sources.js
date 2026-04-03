@@ -99,6 +99,11 @@ const SOURCES = {
     url: "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Public+Act&which_year=2023&bill_num=167",
     description: "School climate legislation mandating new framework effective 2025-26",
   },
+  BULLYING_FORM: {
+    name: "CT Parent's Guide — Filing a Formal Bullying Complaint",
+    url: "https://portal.ct.gov/sde/publications/parents-guide-to-bullying-and-harassment-in-connecticut/filing-a-formal-bullying-complaint",
+    description: "Connecticut SDE guide for parents on how to file a formal bullying complaint",
+  },
   PUBLIC_SCHOOL_REVIEW: {
     name: "Public School Review — Granby District",
     url: "https://www.publicschoolreview.com/connecticut/granby-school-district/901680-school-district",

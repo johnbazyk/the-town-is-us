@@ -201,7 +201,7 @@ function SchoolClimate() {
       <div className="mb-8">
         <h3 className="font-heading text-lg font-bold text-granby-maroon mb-3 border-b border-gray-200 pb-2">
           Reporting Access: Is the Form Easy to Find?
-          <SourceCitation id="GPS_WEBSITE" index={3} />
+          <SourceCitation id="BULLYING_FORM" index={3} />
         </h3>
         <div className="bg-warm rounded p-5 text-sm text-granby-maroon leading-relaxed">
           <p className="mb-2">
