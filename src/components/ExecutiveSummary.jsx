@@ -265,6 +265,55 @@ function ExecutiveSummary() {
 
         </div>
       </details>
+
+      {/* How This Site Was Built */}
+      <details className="mt-4 border border-gray-200 rounded group">
+        <summary className="px-5 py-4 cursor-pointer list-none flex items-center justify-between select-none">
+          <span className="font-heading font-bold text-granby-maroon text-base">How This Site Was Built</span>
+          <span className="text-xs text-gray-400 font-normal">
+            <span className="group-open:hidden">▼ expand</span>
+            <span className="hidden group-open:inline">▲ collapse</span>
+          </span>
+        </summary>
+        <div className="border-t border-gray-200 px-5 pb-5 pt-4 space-y-4 text-sm text-granby-maroon leading-relaxed">
+
+          <p>
+            This site was built by a Granby taxpayer using AI-assisted analysis tools — and full
+            transparency about that process is part of the point.
+          </p>
+
+          <p>
+            Two AI tools were used: Claude Code (a command-line coding agent) to extract data from
+            source PDFs and build the website, and Claude (a desktop planning tool) to structure the
+            20-step workflow. The AI did not generate claims, search the internet, or make editorial
+            decisions. It extracted numbers from ~1,100 official public documents, organized them into
+            structured data, and built the presentation layer. Every step required human review and
+            approval before proceeding.
+          </p>
+
+          <p>
+            The source documents include BOE budget books (FY2016–FY2027), property tax bills, school
+            climate surveys, Census ACS data, SchoolDigger rankings, and SAT benchmark reports from
+            the CT State Department of Education. For scanned PDFs (FY2016–FY2020), OCR verification
+            was used to extract figures, which were then cross-confirmed against prior-year columns in
+            consecutive budget books.
+          </p>
+
+          <p>
+            The full 20-step build process, QA audit results, and source code are available on GitHub
+            at{' '}
+            <a
+              href="https://github.com/johnbazyk/the-town-is-us"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-granby-maroon/70"
+            >
+              github.com/johnbazyk/the-town-is-us
+            </a>.
+          </p>
+
+        </div>
+      </details>
     </section>
   );
 }
