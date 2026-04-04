@@ -199,6 +199,72 @@ function ExecutiveSummary() {
           This is a First Amendment-protected civic publication built by a Granby taxpayer.
         </p>
       </div>
+
+      {/* Methodology Disclosure */}
+      <details className="mt-8 border border-gray-200 rounded group">
+        <summary className="px-5 py-4 cursor-pointer list-none flex items-center justify-between select-none">
+          <span className="font-heading font-bold text-granby-maroon text-base">Our Methodology</span>
+          <span className="text-xs text-gray-400 font-normal">
+            <span className="group-open:hidden">▼ expand</span>
+            <span className="hidden group-open:inline">▲ collapse</span>
+          </span>
+        </summary>
+        <div className="border-t border-gray-200 px-5 pb-5 pt-4 space-y-5 text-sm text-granby-maroon leading-relaxed">
+
+          <div>
+            <p className="font-semibold mb-1">How data was collected</p>
+            <p>
+              This project assembled 1,102 official documents from Granby Public Schools, the Town
+              of Granby, and Connecticut state agencies — every BOE budget book from FY2016 through
+              FY2027, four years of property tax bills, school climate presentations, Finance
+              Subcommittee meeting packets, and BOE meeting minutes. Academic rankings come from
+              SchoolDigger, which publishes annual district rankings derived from CT EdSight
+              assessment data. Demographic figures come from the U.S. Census Bureau American
+              Community Survey. Housing values come from the Zillow Home Value Index, verified
+              monthly.
+            </p>
+          </div>
+
+          <div>
+            <p className="font-semibold mb-1">How verification works</p>
+            <p>
+              Every figure on this dashboard was cross-referenced against an original source
+              document — a PDF on file, a tax bill, or a government data portal. Budget totals are
+              confirmed from the Budget Summary page of each year's BOE budget book, then
+              cross-confirmed as the prior-year column in the following year's book. For FY2016–FY2020
+              (scanned image PDFs with no extractable text), figures were read directly from the PDF
+              images and confirmed independently via the consecutive-year cross-check. Where two
+              independent sources agree on a figure, the <code className="bg-gray-100 px-1 rounded text-xs">isEstimate</code> flag
+              is removed. All corrections are logged with the old value, new value, and source.
+            </p>
+          </div>
+
+          <div>
+            <p className="font-semibold mb-1">What an asterisk (*) means</p>
+            <p>
+              Figures marked with an asterisk are estimates, not exact values. This happens when a
+              number was read from a bar chart or visual graphic rather than a data table — such as
+              the school climate survey percentages — and carries an inherent tolerance of
+              approximately ±2%. District ranking data points for years between published surveys are
+              interpolated and similarly marked. Every estimate is disclosed; none are presented
+              as verified facts.
+            </p>
+          </div>
+
+          <div>
+            <p className="font-semibold mb-1">Editorial standards</p>
+            <p>
+              Every claim on this site traces to a named, clickable source. There are no anonymous
+              claims. Every number has a citation badge — click it to see exactly where the figure
+              came from. If you find an error, use the Submit Data tab; corrections are reviewed and
+              applied promptly, and the change is logged. This is a First Amendment-protected
+              publication produced by a private citizen using public records. It is not affiliated
+              with the Town of Granby or Granby Public Schools.
+            </p>
+          </div>
+
+        </div>
+      </details>
     </section>
   );
 }
