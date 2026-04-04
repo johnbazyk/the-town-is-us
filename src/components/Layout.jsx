@@ -55,6 +55,7 @@ function Layout({ tabs, activeTab, onTabChange, children }) {
         <div className="max-w-6xl mx-auto text-sm space-y-2">
           <p>Built by a Granby taxpayer using public data and AI-assisted analysis.</p>
           <p>All data sourced from official government records and public databases.</p>
+          <p>Data last verified: April 4, 2026 · All figures cross-referenced against original source documents</p>
           <p>
             Found an error? Submit a correction via the{' '}
             <button
@@ -69,7 +70,7 @@ function Layout({ tabs, activeTab, onTabChange, children }) {
             This is a First Amendment-protected civic publication.
           </p>
           <p className="text-gray-400 mt-2">
-            Last updated: April 3, 2026 |{' '}
+            Last updated: April 4, 2026 |{' '}
             <a
               href="https://granbyschools.org"
               target="_blank"
