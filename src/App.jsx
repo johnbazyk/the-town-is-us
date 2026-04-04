@@ -10,6 +10,7 @@ const PropertyTaxRatchet = lazy(() => import('./components/PropertyTaxRatchet'))
 const DemographicsHousing = lazy(() => import('./components/DemographicsHousing'));
 const SchoolClimate = lazy(() => import('./components/SchoolClimate'));
 const FactCheck = lazy(() => import('./components/FactCheck'));
+const DataVerification = lazy(() => import('./components/DataVerification'));
 const SubmitData = lazy(() => import('./components/SubmitData'));
 
 const TABS = [
@@ -20,6 +21,7 @@ const TABS = [
   { id: 'demographics', label: 'Town & Housing Data', component: DemographicsHousing },
   { id: 'climate', label: 'School Climate & Safety', component: SchoolClimate },
   { id: 'factcheck', label: 'Fact-Check', component: FactCheck },
+  { id: 'verify', label: 'Data Verification', component: DataVerification },
   { id: 'submit', label: 'Submit Your Data', component: SubmitData },
 ];
 
