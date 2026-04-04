@@ -181,6 +181,14 @@ function AcademicPerformance() {
         <SourceCitation id="CT_EDSIGHT" index={2} />
       </p>
 
+      {/* Context note */}
+      <div className="bg-blue-50 border-l-4 border-blue-300 p-4 text-sm text-granby-maroon leading-relaxed mb-8">
+        <strong>Note:</strong> Granby remains above the Connecticut state average in most academic
+        metrics. The trends shown below track Granby's performance relative to peer districts and
+        its own historical trajectory — not against statewide benchmarks where Granby continues to
+        perform well in absolute terms.
+      </div>
+
       {/* What Does 'Proficiency' Mean? explainer */}
       <div className="bg-granby-gold-light border-l-4 border-granby-gold px-5 py-4 rounded-r mb-8">
         <p className="text-xs font-bold uppercase tracking-widest text-granby-maroon mb-2">What Does "Proficiency" Mean?</p>

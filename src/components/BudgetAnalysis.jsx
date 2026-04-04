@@ -329,6 +329,35 @@ function BudgetAnalysis() {
         </div>
       </div>
 
+      {/* ── Context & Cost Drivers ──────────────────────────────── */}
+      <div className="bg-slate-50 border-l-4 border-granby-gold px-5 py-4 rounded-r mb-8">
+        <p className="text-xs font-bold uppercase tracking-widest text-granby-maroon mb-3">Context: Why Costs Rise Even as Enrollment Falls</p>
+        <div className="space-y-3 text-sm text-granby-maroon leading-relaxed">
+          <p>
+            Several structural factors contribute to rising school budgets independent of enrollment
+            trends. Special education (SPED) costs are driven by federal and state mandates (IDEA, CT
+            Public Act 23-167) that require specific services regardless of how many students are
+            enrolled. These costs have grown statewide and are not discretionary. Contractual salary
+            and benefit obligations, including negotiated step increases and rising health insurance
+            premiums, represent the largest share of the budget and increase annually under collective
+            bargaining agreements.
+          </p>
+          <p>
+            Fixed operational costs — building maintenance, utilities, transportation routes,
+            administrative staffing — do not scale down proportionally when enrollment declines by
+            20%. A school that loses 50 students still needs the same roof, the same heating system,
+            and most of the same staff. This "fixed cost spread" is a real factor in per-pupil
+            spending increases.
+          </p>
+          <p>
+            The question this dashboard asks is not whether these cost pressures exist — they do —
+            but whether Granby's spending trajectory and academic outcomes are in line with peer
+            districts facing the same pressures. The data in the peer comparison tables above allows
+            residents to evaluate that question for themselves.
+          </p>
+        </div>
+      </div>
+
       {/* ── Data Table ──────────────────────────────────────────── */}
       <div className="mb-4">
         <h3 className="font-heading text-lg font-bold text-granby-maroon mb-4 border-b border-gray-200 pb-2">
