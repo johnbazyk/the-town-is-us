@@ -9,10 +9,11 @@
  * Display these with an asterisk (*) in the UI.
  *
  * VERIFICATION STATUS (April 3, 2026):
- *  - FY2016-FY2019: PDFs are image-based (scanned) — budget & enrollment remain estimates.
- *  - FY2020-FY2021: Budgets verified from the "Past BOE Approved Operating Budgets" history
- *    table in both the FY26 and FY27 budget books. Enrollment verified from the FY27
- *    "Granby Public Schools Enrollment Numbers" table. isEstimate removed.
+ *  - FY2016-FY2020: Budget totals verified April 4, 2026 from Budget Summary pages in each
+ *    year's scanned BOE budget book. Enrollment verified from enrollment history tables in
+ *    later budget books (FY2016-FY2019) and the FY27 actuals table (FY2020). isEstimate removed.
+ *  - FY2021: Budget verified from history tables in FY26+FY27 books. Enrollment from FY27
+ *    actuals table.
  *  - FY2022-FY2027: All budget totals confirmed from primary budget books or history tables.
  *    All enrollment figures confirmed from the FY27 enrollment actuals table.
  *    Previous values for FY2022-FY2025 were significantly wrong (see FACT-CHECK-REPORT.md).
@@ -21,14 +22,18 @@
 // ─── BUDGET DATA ────────────────────────────────────────────────
 export const BUDGET_DATA = {
   years: [
-    // FY2016-FY2019: PDFs are scanned images; text not extractable. Figures remain estimates.
-    { fy: "FY2016", boeBudget: 28435000, enrollment: 2050, millRate: null, source: "FY2016_BUDGET_BOOK", isEstimate: true }, // UNVERIFIED — scanned PDF
-    { fy: "FY2017", boeBudget: 29100000, enrollment: 1980, millRate: null, source: "FY2017_BUDGET_BOOK", isEstimate: true }, // UNVERIFIED — scanned PDF
-    { fy: "FY2018", boeBudget: 29800000, enrollment: 1920, millRate: null, source: "FY2018_BUDGET_BOOK", isEstimate: true }, // UNVERIFIED — scanned PDF
-    { fy: "FY2019", boeBudget: 30200000, enrollment: 1870, millRate: null, source: "FY2019_BUDGET_BOOK", isEstimate: true }, // UNVERIFIED — scanned PDF
-    // FY2020-FY2021: Enrollment verified from FY27 actuals table. Budget for FY2020 still
-    // estimated (image PDF); FY2021 budget verified from history tables in FY26+FY27 books.
-    { fy: "FY2020", boeBudget: 31100000, enrollment: 1799, millRate: null, source: "FY2020_BUDGET_BOOK", isEstimate: true }, // UNVERIFIED — scanned PDF
+    // FY2016-FY2020: Verified April 4, 2026 from Budget Summary pages in each year's scanned BOE
+    // budget book. Budget totals cross-confirmed via prior-year columns in consecutive books.
+    // Enrollment: FY2016-FY2017 actuals from FY2018 book enrollment history table;
+    // FY2018 actual from FY2020 book enrollment history table; FY2019 from FY2020 book table.
+    // FY2020 enrollment unchanged — FY27 actuals table (1,799) is more authoritative than
+    // the FY20 book projection (1,819).
+    { fy: "FY2016", boeBudget: 28718507, enrollment: 1953, millRate: null, source: "FY2016_BUDGET_BOOK" },
+    { fy: "FY2017", boeBudget: 28432636, enrollment: 1874, millRate: null, source: "FY2017_BUDGET_BOOK" },
+    { fy: "FY2018", boeBudget: 28656152, enrollment: 1862, millRate: null, source: "FY2018_BUDGET_BOOK" },
+    { fy: "FY2019", boeBudget: 29654842, enrollment: 1863, millRate: null, source: "FY2019_BUDGET_BOOK" },
+    { fy: "FY2020", boeBudget: 31134620, enrollment: 1799, millRate: null, source: "FY2020_BUDGET_BOOK" },
+    // FY2021: Budget verified from history tables in FY26+FY27 books. Enrollment from FY27 actuals table.
     { fy: "FY2021", boeBudget: 32043750, enrollment: 1729, millRate: null, source: "FY2022_BUDGET_BOOK" },
     // FY2022-FY2027: All budget totals and enrollments verified from primary source PDFs.
     { fy: "FY2022", boeBudget: 33183506, enrollment: 1765, millRate: 39.98, source: "FY2022_BUDGET_BOOK" },
@@ -38,7 +43,7 @@ export const BUDGET_DATA = {
     { fy: "FY2026", boeBudget: 39418142, enrollment: 1675, millRate: 34.21, source: "FY2026_BUDGET_BOOK" },
     { fy: "FY2027", boeBudget: 40916434, enrollment: 1648, millRate: 35.19, source: "FY27_TOWN_BUDGET", isProjected: true },
   ],
-  note: "FY2016-FY2020 budget figures are estimates (PDFs are scanned images, text not extractable). FY2021-FY2027 budgets verified from the 'Past BOE Approved Operating Budgets' history table in the FY26 and FY27 budget books. All enrollment figures FY2020-FY2027 verified from the 'Granby Public Schools Enrollment Numbers' actuals table in the FY27 budget book.",
+  note: "FY2016-FY2020 budget totals verified April 4, 2026 from Budget Summary pages in each year's scanned BOE budget book, cross-confirmed via prior-year columns in consecutive books. FY2016-FY2019 enrollment from enrollment history tables in later budget books. FY2020-FY2027 enrollment from the 'Granby Public Schools Enrollment Numbers' actuals table in the FY27 budget book. FY2021-FY2027 budgets verified from the 'Past BOE Approved Operating Budgets' history table in the FY26 and FY27 budget books.",
   source: "FY27_TOWN_BUDGET",
 };
 
