@@ -112,10 +112,13 @@ function SubmitData() {
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-granby-maroon"
           >
             <option value="">Select a category...</option>
-            <option value="Budget">Budget</option>
+            <option value="Budget Data">Budget Data</option>
+            <option value="Tax Information">Tax Information</option>
             <option value="Academic Performance">Academic Performance</option>
-            <option value="Property Tax">Property Tax</option>
             <option value="School Climate">School Climate</option>
+            <option value="Demographics/Housing">Demographics/Housing</option>
+            <option value="Fact-Check Correction">Fact-Check Correction</option>
+            <option value="FOIA Document">FOIA Document</option>
             <option value="Other">Other</option>
           </select>
         </div>
