@@ -196,13 +196,13 @@ export const SCHOOL_CLIMATE_TIMELINE = [
 // ─── HOUSING VALUE DATA ─────────────────────────────────────────
 export const HOUSING_DATA = {
   values: [
-    { town: "Simsbury", zhvi: 448920, yoyChange: 7.4 },
-    { town: "Suffield", zhvi: 418677, yoyChange: 6.5 },
-    { town: "Granby", zhvi: 392291, yoyChange: 5.2, highlight: true },
+    { town: "Simsbury", zhvi: 511119 },
+    { town: "Suffield", zhvi: 470264 },
+    { town: "Granby", zhvi: 465615, highlight: true },
   ],
   source: "ZILLOW_GRANBY",
-  asOf: "February 2026",
-  note: "ZHVI figures are from Zillow Home Value Index. These change monthly — verify current values at the Zillow URLs in sources.",
+  asOf: "April 2026",
+  note: "ZHVI figures from Zillow Home Value Index, verified by project owner April 2026. YoY change not verified — removed pending Zillow page review.",
 };
 
 // ─── FACT-CHECK DATA (Drummer Articles) ─────────────────────────
