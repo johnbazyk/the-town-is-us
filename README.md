@@ -74,6 +74,7 @@ Output goes to `build/`. Total JS bundle is ~433KB uncompressed (~115KB gzip). N
 ## Build Documentation
 
 - [`HOW-THIS-SITE-WAS-BUILT.md`](./HOW-THIS-SITE-WAS-BUILT.md) — full methodology writeup — how the data was gathered, verified, and presented using AI-assisted tools
+- [`INDEPENDENT-AUDIT-PROMPT.md`](./INDEPENDENT-AUDIT-PROMPT.md) — prompt for independent bias and accuracy review of the dashboard
 - [`SITE-UPDATE-SPEC.md`](./SITE-UPDATE-SPEC.md) — the 20-step specification that governed the build process for this version
 - [`qa-reports/QA-AUDIT-2026-04-04.md`](./qa-reports/QA-AUDIT-2026-04-04.md) — pre-deploy QA audit results (7/9 checks passed, 2 investigated and resolved)
 
